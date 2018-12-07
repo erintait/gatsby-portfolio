@@ -31,7 +31,7 @@ class Contact extends Component {
     const { name, email, message } = this.state;
 
     // Call Lambda Function
-    axios.post('./netlify/functions/mailer', {
+    axios.post('/.netlify/functions/mailer', {
         name: name,
         email: email,
         message: message
